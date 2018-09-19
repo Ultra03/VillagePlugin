@@ -25,7 +25,7 @@ public class MayorCommand implements CommandExecutor {
 				return false;
 			} else if(args.length == 1) {
 				
-				if(plugin.getConfig().getString("mayor") == "") {
+				if(plugin.getConfig().getString("mayor").equals("")) {
 					Player mayor = Bukkit.getPlayer(args[0]);
 					ConsoleCommandSender console = Bukkit.getServer().getConsoleSender();
 					Bukkit.dispatchCommand(console, "pex user " + mayor.getName() + " group set Mayor");
