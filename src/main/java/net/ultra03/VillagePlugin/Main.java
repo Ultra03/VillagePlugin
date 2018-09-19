@@ -18,13 +18,13 @@ public class Main extends JavaPlugin {
 		instance = this;
 		saveDefaultConfig();
 		
-		getLogger().info("Enabled VillagePlugin v1.0 by Ultra03");
+		getLogger().info("Enabled VillagePlugin v1.0.1 by Ultra03");
 		
 	}
 	
 	@Override
 	public void onDisable() {
-		getLogger().info("Disabled VillagePlugin v1.0 by Ultra03");
+		getLogger().info("Disabled VillagePlugin v1.0.1 by Ultra03");
 	}
 	
 	public boolean isMayor(Player player) {
