@@ -1,11 +1,16 @@
 name: VillagePlugin
 author: Lucas/ultraMLG1108
-version: 1.0.1
+version: 1.1
 main: net.ultra03.VillagePlugin.Main
 
 commands:
-  mayor:
+  setmayor:
     description: "Transfers mayorship to the player specified."
-    usage: "§cSyntax error. Use /mayor <player>"
+    usage: "§cSyntax error. Use /setmayor <player>"
     permission: villageplugin.setmayor
+    permission-message: "§cYou don't have permission to use this command."
+  mayor:
+    description: "Sends you the name of the current mayor."
+    usage: "§cSyntax error. Use /mayor"
+    permission: villageplugin.mayor
     permission-message: "§cYou don't have permission to use this command."

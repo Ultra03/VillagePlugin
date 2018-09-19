@@ -13,18 +13,19 @@ public class Main extends JavaPlugin {
 		
 		PluginManager pm = this.getServer().getPluginManager();
 		pm.registerEvents(new MainListener(this), this);
-		getCommand("mayor").setExecutor(new MayorCommand(this));
+		getCommand("setmayor").setExecutor(new SetMayorCommand(this));
+		getCommand("mayor").setExecutor(new GetMayorCommand(this));
 		
 		instance = this;
 		saveDefaultConfig();
 		
-		getLogger().info("Enabled VillagePlugin v1.0.1 by Ultra03");
+		getLogger().info("Enabled VillagePlugin v1.1 by Ultra03");
 		
 	}
 	
 	@Override
 	public void onDisable() {
-		getLogger().info("Disabled VillagePlugin v1.0.1 by Ultra03");
+		getLogger().info("Disabled VillagePlugin v1.1 by Ultra03");
 	}
 	
 	public boolean isMayor(Player player) {
